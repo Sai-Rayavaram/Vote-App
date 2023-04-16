@@ -1,0 +1,77 @@
+class User:
+    def __init__(self, name, age, voter_id):
+        self.name = name
+        self.age = age
+        self.voter_id = voter_id
+        self.is_voted = False
+
+    def verify_voter(self):
+        # logic to verify voter
+        pass
+
+    def cast_vote(self, candidate_id):
+        # logic to cast vote
+        pass
+
+
+class Election:
+    def __init__(self, election_name, candidates, start_date, end_date):
+        self.election_name = election_name
+        self.candidates = candidates
+        self.start_date = start_date
+        self.end_date = end_date
+        self.is_active = False
+
+    def activate_election(self):
+        # logic to activate election
+        pass
+
+    def get_results(self):
+        # logic to get election results
+        pass
+
+
+class Candidate:
+    def __init__(self, name, party, candidate_id):
+        self.name = name
+        self.party = party
+        self.candidate_id = candidate_id
+        self.vote_count = 0
+
+    def increment_vote_count(self):
+        # logic to increment vote count
+        pass
+
+
+class VoterDB:
+    def __init__(self):
+        self.voters = []
+
+    def add_voter(self, voter):
+        # logic to add voter
+        pass
+
+    def get_voter(self, voter_id):
+        # logic to get voter
+        pass
+
+    def remove_voter(self, voter_id):
+        # logic to remove voter
+        pass
+
+
+class CandidateDB:
+    def __init__(self):
+        self.candidates = []
+
+    def add_candidate(self, candidate):
+        # logic to add candidate
+        pass
+
+    def get_candidate(self, candidate_id):
+        # logic to get candidate
+        pass
+
+    def remove_candidate(self, candidate_id):
+        # logic to remove candidate
+        pass
